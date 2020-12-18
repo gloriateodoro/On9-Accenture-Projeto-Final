@@ -12,42 +12,42 @@
 # 🚀 Routes
 
 / → Frontend 
--Início da prototipagem de telas pelo Figma
-https://www.figma.com/file/PUB6m7h26oOZNdEEIxneYu/Hospedagem-Acess%C3%ADvel?node-id=0%3A1
+-Início da prototipagem de telas pelo Figma 
+    - https://www.figma.com/file/PUB6m7h26oOZNdEEIxneYu/Hospedagem-Acess%C3%ADvel?node-id=0%3A1
 
 /cadastro-usuario 
-(Objetivo: permitir que outras pessoas deem sugestões de hospedagens que ainda não foram cadastradas no site e relatem experiências com os locais cadastrados)
+(Objetivo: permitir que outras pessoas deem sugestões de hospedagens que ainda não foram cadastradas no site e que relatem experiências com os locais cadastrados)
 
-- Cadastrar (Publico) (POST)
-https://viajante-sobre-rodas.herokuapp.com/api/user/register
+- Cadastrar (Publico) (POST) 
+    - https://viajante-sobre-rodas.herokuapp.com/api/user/register
 
-- Retornar todos os usuários cadastrados (GET)
-https://viajante-sobre-rodas.herokuapp.com/api/user/all
+- Retornar todos os usuários cadastrados (GET) 
+    - https://viajante-sobre-rodas.herokuapp.com/api/user/all
 
-- Autenticar login (POST) 
+- Autenticar login (POST)  
 (Email, Senha) → JWT Token (Publico)
-https://viajante-sobre-rodas.herokuapp.com/api/auth/authenticate
+    - https://viajante-sobre-rodas.herokuapp.com/api/auth/authenticate
 
 
 /hospedagem
 
-- Cadastrar (POST)
-https://viajante-sobre-rodas.herokuapp.com/api/hosting/createhosting
+- Cadastrar (POST) 
+    - https://viajante-sobre-rodas.herokuapp.com/api/hosting/createhosting
 
-- Editar hospedagem (PUT)
-https://viajante-sobre-rodas.herokuapp.com/api/hosting/updatehosting/:id
+- Editar hospedagem (PUT) 
+    - https://viajante-sobre-rodas.herokuapp.com/api/hosting/updatehosting/:id
 
-- Listar todas as hospedagens (GET)
-https://viajante-sobre-rodas.herokuapp.com/api/hosting/all
+- Listar todas as hospedagens (GET) 
+    - https://viajante-sobre-rodas.herokuapp.com/api/hosting/all
 
-- Listar hospedagens por estado (GET)
-https://viajante-sobre-rodas.herokuapp.com/api/hosting/state/:state
+- Listar hospedagens por estado (GET) 
+    - https://viajante-sobre-rodas.herokuapp.com/api/hosting/state/:state
 
-- Listar hospedagens por cidade (GET)
-https://viajante-sobre-rodas.herokuapp.com/api/hosting/city/:cidade
+- Listar hospedagens por cidade (GET) 
+    - https://viajante-sobre-rodas.herokuapp.com/api/hosting/city/:cidade
 
-- Excluir hospedagem (DELETE)
-https://viajante-sobre-rodas.herokuapp.com/api/hosting/deletehosting/:id
+- Excluir hospedagem (DELETE) 
+    - https://viajante-sobre-rodas.herokuapp.com/api/hosting/deletehosting/:id
 
 
 ## 📃 Models

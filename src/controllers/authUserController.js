@@ -5,10 +5,10 @@ const jwt = require('jsonwebtoken')
 const authConfig = require('../config/auth')
 
 function generateToken(params = {}) {
-    jwt.sign({ id: user.id }, authConfig.secret, {
+    return jwt.sign(params, authConfig.secret, {
         expiresIn: 43200
     })
-}     
+}    
 
 const userAuthenticate = async (request, response) =>{
     const {email, password} = request.body;
@@ -22,6 +22,10 @@ const userAuthenticate = async (request, response) =>{
     return response.status(400).send({ error: 'Invalid password' })
     
     user.password = undefined
+
+    const token = jwt.sign({ id: user.id}, authConfig.secret, {
+        expiresIn: 86400
+    })
 
     response.send({
         user,
